@@ -1,0 +1,6 @@
+div- is used to make block containers
+span-is used to make inline containers
+//refer video 31 6:07
+
+//entity code for reserved characters like -'<','>','&'
+header,footer,main,nav are all similar to div but used for different functions and have a meaning associated with each of it,called semantic markup
