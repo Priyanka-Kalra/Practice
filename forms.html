@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demp</title>
+</head>
+
+<!--in forms,
+action defines where our request is sent
+method defines the http methid to be used
+input does not require closing tag
+id and for from label should be same to connect them
+
+button present in the <form></form> if not defined is of submit type. else use type="" for it-->
+
+<body>
+    <h1>Form Demonstration</h1>
+    <button>Does not submits</button>
+    <form action="/tacos">
+
+        <button type="button">Does not submit</button>
+        <label for="1">Enter Age</label>
+        <input id="1" type="number" placeholder="Age"><br><!--placeholder displays the text befor user enters/alters-->
+
+        <label for="2">Enter Username</label>
+        <input id="2" type="text" placeholder="Username"><br>
+
+        <label for="3">Enter Password</label>
+        <input id="3" type="password" placeholder="Password"><br>
+
+        <button>Submit</button>
+
+    </form>
+</body>
+
+</html>
