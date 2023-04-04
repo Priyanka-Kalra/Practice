@@ -4,6 +4,3 @@ span-is used to make inline containers
 
 //entity code for reserved characters like -'<','>','&'
 header,footer,main,nav are all similar to div but used for different functions and have a meaning associated with each of it,called semantic markup
-
-
-
