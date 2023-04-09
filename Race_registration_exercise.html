@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Register Form</title>
+</head>
+<body>
+    <h1>Race Registration</h1>
+    <section>
+        <form action="\jdgsu">
+            <label for="1">First Name</label>
+            <input id="1" type="text" name="first" required >
+
+            <label for="2">Last Name</label>
+            <input id="2" type="text" name="last" required><br><br>
+
+            Select a race: <br><br>
+            <input type="radio" id="fun_run" name="RACE_TYPE" value="Fun Run 5km" required>
+            <label for="fun_run">Fun Run 5km</label><br>
+            <input type="radio" id="half" name="RACE_TYPE" value="Half Marathon" required>
+            <label for="half">Half Marathon</label><br>
+            <input type="radio" id="full" name="RACE_TYPE" value="Full Marathon" required>
+            <label for="full">Full Marathon</label><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="E-address" id="email" required>
+
+            <label for="pass">Password</label>
+            <input type="password" name="Password" id="pass" required><br>
+
+            <label for="Age">Select Age Group</label>
+            <select name="Age_Group" id="Age" required>
+                <option value="">--Select--</option>
+                <option value="Under 12">Under 12</option>
+                <option value="Under 18">Under 18</option>
+                <option value="Free Grp">Free Grp</option>
+            </select><br>
+            <button>Register!</button>
+
+        </form>
+    </section>
+    
+</body>
+</html>
