@@ -1,0 +1,49 @@
+h1 {
+    text-align: center;
+    font-weight: 400;
+    /*use bold for bold */
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+
+h2 {
+    color: brown;
+    text-decoration: dashed underline;
+}
+
+body {
+    background-color: rgb(176, 222, 240)
+        /*background-color: #5fcffc in hexadecimal*/
+}
+
+header,
+footer {
+    background-color: rgba(198, 197, 197, 0.682);
+}
+
+table {
+
+    background-color: white;
+    border: black dashed;
+}
+
+button {
+    background-color: teal;
+
+}
+
+p {
+    text-align: justify;
+    font-family: 'Avante Garde', "Calibri";
+    /*first choice,second choice and so on*/
+
+}
+
+section {
+    line-height: 1.5;
+}
+
+a {
+    color: violet;
+    text-decoration: none;
+}
