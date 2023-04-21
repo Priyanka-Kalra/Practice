@@ -12,13 +12,12 @@ h2 {
 }
 
 body {
-    background-color: rgb(176, 222, 240)
+    background-color: rgb(211, 212, 217)
         /*background-color: #5fcffc in hexadecimal*/
 }
 
-header,
-footer {
-    background-color: rgba(198, 197, 197, 0.682);
+header,footer {
+    background-color: #cbf3f0;
 }
 
 table {
@@ -38,12 +37,78 @@ p {
     /*first choice,second choice and so on*/
 
 }
+/* pseudo elements,uses two semicolon */
+p::first-letter{
+    font-weight: bold;
+    color:black;
+    font-size: 30px;
+}
+::selection{
+    background-color: #ffc757cc;
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 section {
     line-height: 1.5;
 }
 
-a {
-    color: violet;
+/*descendent selectors*/
+a{
+    color: #6f1d1b;
     text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+li a {
+    color: rgb(253, 85, 147);
+    
+}
+
+/* id*/
+#test {
+
+    text-decoration: underline;
+    border: dotted;
+    background-color: #b36a5e;
+    line-height: 2;
+    font-size: 15px;
+}
+
+span{
+    font-size: large;
+    text-decoration: underline black;
+
+}
+/* class */
+.charcter{
+    background-color: #83c5be;
+    color: #ae2012;
+}
+.habit {
+    background-color: #f08080d3;
+    color: #124559;
+}
+/*just the next */
+#sam +p{
+    color:#3c6e71;
+}
+/*direct descent*/
+section > button{
+    background-color: azure;
+    color: black;
+}
+
+input[type="text"]{
+    color:orange;
+}
+input[type="password"] {
+    color: #7400b8;
+}
+button:hover,#test:hover{
+    color:white;
+    background-color: black;
 }
