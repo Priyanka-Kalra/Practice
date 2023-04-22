@@ -12,6 +12,8 @@ h2 {
 }
 
 body {
+    margin-top:0;
+    margin-bottom: 0;
     background-color: rgb(211, 212, 217)
         /*background-color: #5fcffc in hexadecimal*/
 }
@@ -23,7 +25,9 @@ header,footer {
 table {
 
     background-color: white;
-    border: black dashed;
+    border: 3px black dashed;
+    /* box-sizing: border-box;  using this,size of box includes the border size  */
+    border-radius: 40px 5px 40px 5px;
 }
 
 button {
