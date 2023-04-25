@@ -4,6 +4,7 @@ h1 {
     /*use bold for bold */
     text-decoration: underline;
     letter-spacing: 5px;
+    margin-top: 7%;
 }
 
 h2 {
@@ -13,17 +14,12 @@ h2 {
 }
 
 body {
-    margin-top:0;
+    margin-top: 0;
     margin-bottom: 0;
     background-color: rgb(211, 212, 217)
         /*background-color: #5fcffc in hexadecimal*/
 }
 
-header,footer {
-    background-color: #cbf3f0;
-    margin: 1px;
-    padding:3px;
-}
 
 table {
 
@@ -32,10 +28,14 @@ table {
     /* box-sizing: border-box;  using this,size of box includes the border size  */
     text-align: center;
 }
-th,tr,td{
+
+th,
+tr,
+td {
     border: solid black 1.5px;
 }
-#tab{
+
+#tab {
     margin-left: auto;
     margin-right: auto;
 }
@@ -51,13 +51,15 @@ p {
     /*first choice,second choice and so on*/
 
 }
+
 /* pseudo elements,uses two semicolon */
-p::first-letter{
+p::first-letter {
     font-weight: bold;
-    color:black;
+    color: black;
     font-size: 30px;
 }
-::selection{
+
+::selection {
     background-color: #ffc757cc;
     text-decoration: underline;
     font-weight: bold;
@@ -65,23 +67,21 @@ p::first-letter{
 
 section {
     line-height: 1.5;
-    border:white solid 2px;
+    border: white solid 2px;
     margin-bottom: 3px;
 }
 
 /*descendent selectors*/
-a{
+a {
     color: #6f1d1b;
     text-decoration: none;
 }
+
 a:hover {
+    background-color: white;
     color: black;
     text-decoration: underline;
     font-weight: bold;
-}
-li a {
-    color: rgb(253, 85, 147);
-    
 }
 
 /* id*/
@@ -94,38 +94,45 @@ li a {
     font-size: 15px;
 }
 
-span{
+span {
     font-size: large;
     text-decoration: underline black;
 
 }
+
 /* class */
-.charcter{
+.charcter {
     background-color: #83c5be;
     color: #ae2012;
 }
+
 .habit {
     background-color: #f08080d3;
     color: #124559;
 }
+
 /*just the next */
-#sam +p{
-    color:#3c6e71;
+#sam+p {
+    color: #3c6e71;
 }
+
 /*direct descent*/
-section > button{
+section>button {
     background-color: azure;
     color: black;
 }
 
-input[type="text"]{
-    color:orange;
+input[type="text"] {
+    color: orange;
 }
+
 input[type="password"] {
     color: #7400b8;
 }
-button:hover,#test:hover{
-    color:white;
+
+button:hover,
+#test:hover {
+    color: white;
     background-color: black;
 }
 
@@ -136,9 +143,41 @@ figure {
     padding-top: 5px;
 
 }
-img{
+
+img {
     width: 200px;
-    border:2px black dashed;
+    border: 2px black dashed;
     border-radius: 50%;
 }
 
+header,footer {
+    background-color: #26547c91;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+header {
+    top: 0;
+    position: fixed;
+}
+
+footer {
+    bottom: 0;
+    margin-bottom: 0%;
+    margin-top: 2px;
+}
+
+header li,footer li {
+    margin: 4px;
+    display: inline;
+    border: black solid 2px;
+    border-radius: 5px;
+}
+
+header a,footer a {
+    background-color: #252627;
+    color: #fff9fb;
+    
+}

@@ -1,0 +1,59 @@
+h1{
+    width:200px;
+    padding: 0.6em;
+    margin-left: auto;
+    margin-right: auto;
+
+    color:black;
+    border:solid rgb(2,48,71) 3px;
+    background-color: #8ECAE6;
+    text-align: center;
+}
+/*see transform1.png  for original*/
+section h1:nth-of-type(2n){
+    background-color: #FFB703;
+}
+section h1:nth-of-type(3n) {
+    background-color: #219ebc;
+}
+section h1:nth-of-type(4n) {
+    background-color: #FB8500;
+}
+
+/*see transform2.png  for chnges made*/
+section:nth-of-type(1) h1:nth-of-type(1) {
+    /*transform-origin:top right*/
+    transform: rotate(45deg);
+}
+
+section:nth-of-type(1) h1:nth-of-type(2) {
+    transform: scale(0.7);
+}
+
+section:nth-of-type(1) h1:nth-of-type(3) {
+    transform: translateX(200px);
+}
+
+section:nth-of-type(1) h1:nth-of-type(4) {
+    transform: translateY(-100px);
+}
+
+section:nth-of-type(2) h1:nth-of-type(1) {
+    transform: skew(45deg);
+}
+section:nth-of-type(2) h1:nth-of-type(2) {
+    transform: skew(30deg,10deg);/*x and y*/
+}
+section:nth-of-type(2) h1:nth-of-type(3) {
+    transform: rotate(30deg) scale(1.3);
+
+}
+section:nth-of-type(2) h1:nth-of-type(4) {
+    transform: translateY(100px) skew(20deg) rotate(0.5turn);
+}
+
+
+/*see transform3.png  for chnges made*/
+section:nth-of-type(2) {
+    transform: scale(0.5);
+}
