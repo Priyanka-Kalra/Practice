@@ -1,11 +1,17 @@
-section{
-    width:80%;
-    height:800px;
+section {
+    width: 80%;
+    height: 800px;
     background-image: url("https://images.unsplash.com/photo-1682371788431-e2bf837f868e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
-    image-size: cover;
-    margin: 0 auto;
+    background-size: cover;
+    /*options like contain,auto*/
+    background-position: bottom;
+    /*image starts positioning from bottom*/
+    margin: auto;
 }
-h1{
-color: white;
-font-size: 80px;
+
+/*refer mdn for complete background*/
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 80px;
 }
